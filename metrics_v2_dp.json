@@ -1,0 +1,11 @@
+{
+  "mae": 108.89134979248047,
+  "rmse": 130.99313406386992,
+  "epsilon": 5.398482867034206,
+  "delta": 1e-05,
+  "noise_multiplier": 1.1,
+  "l2_norm_clip": 1.0,
+  "epochs": 10,
+  "batch_size": 64,
+  "n_train": 920
+}
