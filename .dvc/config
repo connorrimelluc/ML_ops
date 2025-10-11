@@ -1,0 +1,4 @@
+[core]
+    remote = gcsstore
+['remote "gcsstore"']
+    url = gs://mlops-total-lift-dvc-cr
