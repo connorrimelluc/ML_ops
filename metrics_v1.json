@@ -1,9 +1,0 @@
-{
-  "r2": -204.68343443911073,
-  "mae": 13183.790274855364,
-  "rmse": 1120191.8317922337,
-  "n_features_numeric": 15,
-  "n_features_categorical": 11,
-  "n_rows_train": 92258,
-  "n_rows_test": 23065
-}
