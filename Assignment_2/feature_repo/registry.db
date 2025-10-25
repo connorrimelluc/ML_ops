@@ -1,0 +1,41 @@
+
+@
+ 
+row_id"row_idJathletes_local
+”ôÇ¨™¿ê”ôÇ¨™¿ê
+E
+%
+__dummy"
+__dummy_idJathletes_local
+”ôÇˆÙÉê”ôÇˆÙÉê1"$ca6feb25-c675-42de-bd19-d8dc6672fca9*”ôÇà®“ë2È
+§
+athletes_v2athletes_localrow_id"
+
+feat_num_1"
+
+feat_num_2"
+feat_num_1_x_2"
+feat_num_1_sq"
+event_ts2€†°–:”event_tsZ../data_work/v2.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢../data_work/v2.parquet’”ôÇ°šè©"”ôÇ¨½³ê@b
+
+row_id
+”ôÇ€Õê”ôÇ€Õê2¡
+€
+athletes_v1athletes_localrow_id"
+
+feat_num_1"
+
+feat_num_2"
+event_ts2€†°–:”event_tsZ../data_work/v1.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢../data_work/v1.parquet’”ôÇÈ¼Ú©"”ôÇ€° ê@b
+
+row_id
+”ôÇØíñê”ôÇØíñêR‚
+
+,feast.infra.online_stores.sqlite.SqliteTable"O
+1/home/jupyter/ML_ops/feature_repo/online_store.dbathletes_local_athletes_v1
+
+,feast.infra.online_stores.sqlite.SqliteTable"O
+1/home/jupyter/ML_ops/feature_repo/online_store.dbathletes_local_athletes_v2b¥event_tsZ../data_work/v1.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢../data_work/v1.parquetªathletes_local’”ôÇÈ¼Ú©"”ôÇ€° êb¥event_tsZ../data_work/v2.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢../data_work/v2.parquetªathletes_local’”ôÇ°šè©"”ôÇ¨½³êŠ0
+
+athletes_local
+”ôÇÈ”«”ôÇÈ”«
