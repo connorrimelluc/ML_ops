@@ -1,0 +1,10 @@
+# Ignore everything except Final_Project and required pipeline files
+*
+!Final_Project/
+!.gitignore
+!dvc.yaml
+!dvc.lock
+
+# Ignore log files & notebook checkpoints
+*.log
+.ipynb_checkpoints/
