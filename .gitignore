@@ -1,10 +1,11 @@
-# Ignore everything except Final_Project and required pipeline files
+# Ignore everything
 *
+
+# Except the Final_Project folder and everything inside it
 !Final_Project/
-!.gitignore
+!Final_Project/**
+
+# Also keep DVC tracking + gitignore itself
 !dvc.yaml
 !dvc.lock
-
-# Ignore log files & notebook checkpoints
-*.log
-.ipynb_checkpoints/
+!.gitignore
