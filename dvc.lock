@@ -1,0 +1,50 @@
+schema: '2.0'
+stages:
+  train_test_split:
+    cmd: python Final_Project/src/data_prep/create_train_test.py
+    deps:
+    - path: Final_Project/data/car_price_prediction_.csv
+      hash: md5
+      md5: 50cb8c36c5362d6122dfbf888c406938
+      size: 160087
+    - path: Final_Project/src/data_prep/create_train_test.py
+      hash: md5
+      md5: 77f714a7b0c519a2ba8b43f0bc0d4369
+      size: 1192
+    outs:
+    - path: Final_Project/data/X_test.parquet
+      hash: md5
+      md5: 4be9737b125577ee749356c449f5cf4a
+      size: 13611
+    - path: Final_Project/data/X_train.parquet
+      hash: md5
+      md5: 24e047dc99502a29444c2a0fd281a424
+      size: 35635
+    - path: Final_Project/data/y_test.parquet
+      hash: md5
+      md5: a4f9f3c94c303105b3c4572cb00f149c
+      size: 8255
+    - path: Final_Project/data/y_train.parquet
+      hash: md5
+      md5: cc3f50c8c43950ba63e39d2352f873eb
+      size: 27241
+  train_model:
+    cmd: python Final_Project/src/training/train_model.py
+    deps:
+    - path: Final_Project/data/X_train.parquet
+      hash: md5
+      md5: 24e047dc99502a29444c2a0fd281a424
+      size: 35635
+    - path: Final_Project/data/y_train.parquet
+      hash: md5
+      md5: cc3f50c8c43950ba63e39d2352f873eb
+      size: 27241
+    - path: Final_Project/src/training/train_model.py
+      hash: md5
+      md5: 3987efe10a77d1f914ec311b8972bb38
+      size: 2306
+    outs:
+    - path: Final_Project/models/model.pkl
+      hash: md5
+      md5: 0e7408d08ac5a7f58c5e61525ecaa9b2
+      size: 177937

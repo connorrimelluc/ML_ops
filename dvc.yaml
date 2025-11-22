@@ -1,0 +1,19 @@
+stages:
+  train_test_split:
+    cmd: python Final_Project/src/data_prep/create_train_test.py
+    deps:
+    - Final_Project/data/car_price_prediction_.csv
+    - Final_Project/src/data_prep/create_train_test.py
+    outs:
+    - Final_Project/data/X_test.parquet
+    - Final_Project/data/X_train.parquet
+    - Final_Project/data/y_test.parquet
+    - Final_Project/data/y_train.parquet
+  train_model:
+    cmd: python Final_Project/src/training/train_model.py
+    deps:
+    - Final_Project/data/X_train.parquet
+    - Final_Project/data/y_train.parquet
+    - Final_Project/src/training/train_model.py
+    outs:
+    - Final_Project/models/model.pkl
